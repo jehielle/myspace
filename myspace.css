@@ -1,0 +1,139 @@
+:root{
+    --blue: rgb(46, 144, 177); 
+    --pink: rgb(225, 58, 142);
+    --black: rgb(19, 19, 19);
+}
+
+body, html{
+    color: white;
+    background-image: url('bg_glitter-graphics.jpg');
+    overflow-x:hidden;
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 12px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+img{
+    user-select: none;
+    max-width: 100%;
+    height: auto;
+}
+
+#header, #header img{
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#searchbar, #searchbar a{
+    max-width: 100vw;
+    margin-top: -3px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--black);
+    text-decoration: none;
+    line-height:1.5;
+}
+
+#nav{
+    max-width: 100vw;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--blue);
+    margin-bottom: 25px;
+    margin: 0 auto;
+}
+
+#aboutme img{
+    margin-right: 20px;
+}
+
+.box{
+    max-width: 400px;
+    background-color: black;
+    outline: double 5px var(--blue);
+    margin-bottom: 25px;
+    max-height: fit-content;
+}
+
+.box img{
+    width: 400px;
+}
+
+.box a{
+    color:var(--pink);
+}
+
+
+.column {
+    float: left;
+    padding: 1vw;
+}
+
+.column .box{
+    margin-top: 8px;
+}
+
+.rows{
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 1vw 1vw;
+}
+
+.wrapper{
+    padding: 0 18vw;
+    margin: 0 auto;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#friends td{
+    padding: 15px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+#friends img{
+    width: 100%; 
+    display:block;
+}
+
+#music_player{
+    outline:none; 
+    background-color: transparent; 
+    margin: 0;
+}
+
+table td{
+    vertical-align: top;
+    text-align: left;
+}
+
+
+/* ---------------------------------------------- */
+/*                      MEDIA                     */
+/* ---------------------------------------------- */
+
+@media (max-width: 420px) {
+    body, html{
+        overflow-x: hidden;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper{
+        padding: 0;
+    }
+}
